@@ -63,27 +63,6 @@
   }
 }
 
-
-.dot {
-  opacity: .7;
-  cursor: pointer;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: rgb(31, 119, 180);
-  shape-rendering: crispEdges;
-}
-
-text {
-  stroke: none;
-  fill: #666666;
-  font-size: .6em;
-  font-family: "Helvetica Neue";
-}
-
-
 @media screen and (max-width: 400px) {
   .aText {
     font-size: 13px;
