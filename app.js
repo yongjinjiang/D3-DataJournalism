@@ -1,18 +1,24 @@
-// @TODO: YOUR CODE HERE!
 // Step 1: Set up our chart
 //= ================================
-var svgWidth = 960;
-var svgHeight = 600;
+
+function makeResponsive() {
+
+var svgArea = d3.select("#scatter>svg ")
+
+    // svg params
+  var svgHeight = window.innerHeight;
+  var svgWidth = window.innerWidth;
+
+//var svgWidth = 960;
+//var svgHeight = 600;
 
 var margin = {
   top: 20,
-  right: 40,
+  right: 80,
   bottom: 80,
   left: 80
 };
 
-// var width = svgWidth - margin.left - margin.right;
-// var height = svgHeight - margin.top - margin.bottom;
 var chartWidth = svgWidth - margin.left - margin.right;
 var chartHeight = svgHeight - margin.top - margin.bottom;
 
@@ -21,8 +27,11 @@ var chartHeight = svgHeight - margin.top - margin.bottom;
 // and shift the latter by left and top margins.
 // =================================
 
+if (!svgArea.empty()) {
+   svgArea.remove()
+  }
 
-var svg = d3.select("#scatter")
+  svg=d3.select("#scatter")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight)
@@ -484,9 +493,10 @@ var smokesLabel = labelsGroup_y.append("text")
    }
 )});
 
+}
 
-
-
+ makeResponsive()
+d3.select(window).on("resize", makeResponsive);
 // chartGroup.append("text")
 //     .attr("class", "x label")
 //     .attr("x", chartWidth/2 +margin.left)
