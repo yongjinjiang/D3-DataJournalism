@@ -12,12 +12,24 @@ var svgArea = d3.select("#scatter>svg ")
 //var svgWidth = 960;
 //var svgHeight = 600;
 
+if (svgWidth>600){
 var margin = {
   top: 20+30+30,
   right: 120+30+30+100,
   bottom: 80,
   left: 80+30+30
-};
+}
+}
+else{
+  var margin = {
+    top: 20+30+30,
+    right: 30,
+    bottom: 80,
+    left: 30
+  }
+
+}
+
 
 var chartWidth = svgWidth - margin.left - margin.right;
 var chartHeight = svgHeight - margin.top - margin.bottom;
