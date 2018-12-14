@@ -13,10 +13,10 @@ var svgArea = d3.select("#scatter>svg ")
 //var svgHeight = 600;
 
 var margin = {
-  top: 20,
-  right: 120,
+  top: 20+30+30,
+  right: 120+30+30+100,
   bottom: 80,
-  left: 80
+  left: 80+30+30
 };
 
 var chartWidth = svgWidth - margin.left - margin.right;
@@ -40,9 +40,11 @@ if (!svgArea.empty()) {
   // .attr("height", 100)
   // .style("fill","rgb(0,0,255)") 
  
+  svg.append('h1').text('this is p')
   
 var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+  .attr("transform", `translate(${margin.left}, ${margin.top})`)
+
 // Step 3:
 // Import data from the donuts.csv file
 // =================================
@@ -204,11 +206,13 @@ var yLinearScale = yScale(CensusData, chosenYAxis);
 
    var xAxis = chartGroup.append("g")
    .classed("x-axis", true)
-   .attr("transform", `translate(0, ${chartHeight+margin.top})`)
+  //  .attr("transform", `translate(${margin.left}, ${chartHeight+margin.top})`)
+  .attr("transform", `translate(0, ${chartHeight})`)
    .call(bottomAxis);
 
  // append y axis
   var  yAxis= chartGroup.append("g")
+  // .attr("transform", `translate(${margin.left}, ${margin.top})`)
    .classed("y-axis", true)
    .call(leftAxis);
 
@@ -219,8 +223,8 @@ var circlesGroup=  chartGroup.selectAll("g.dot")
 circlesGroup.append("circle")
 .attr("class", "dot")
 .attr("r", "15")
-.attr("cx",data=>xLinearScale(data.poverty))
-.attr("cy",data=>yLinearScale(data.healthcare))
+.attr("cx",data=>xLinearScale(data[chosenXAxis]))
+.attr("cy",data=>yLinearScale(data[chosenYAxis]))
 .attr("fill", "red");
 
 circlesGroup.append("text").text(function(d){
@@ -235,13 +239,13 @@ circlesGroup.append("text").text(function(d){
 // Now create labels under xAxis: 
 // Create group template for  3 x- axis labels
 var labelsGroup_x = chartGroup.append("g")
-.attr("transform", `translate(${chartWidth/2 +margin.left}, ${chartHeight+margin.top})`);
+.attr("transform", `translate(${chartWidth/2}, ${chartHeight})`);
 
 // Create group template for  3 y- axis labels
 var labelsGroup_y = chartGroup.append("g")
 //.attr("transform", `translate(${chartWidth/2 +margin.left}, ${chartHeight+margin.top-20})`);
-.attr("x", -chartHeight/2+margin.top)
-     .attr("y", -margin.left/2-10)
+.attr("x", -chartHeight/2)
+     .attr("y", 0)
      .attr("dy", "0.375em")
      .attr("transform", "rotate(-90)")
      
@@ -274,7 +278,7 @@ var incomeLabel = labelsGroup_x.append("text")
  
 //labels of y axis:
 var healthcareLabel = labelsGroup_y.append("text")
-.attr("x", -chartHeight/2+margin.top)
+.attr("x", -chartHeight/2)
 .attr("y", -20)
 .attr("value", "healthcare") // value to grab for event listener
 .classed("active", true)
@@ -282,7 +286,7 @@ var healthcareLabel = labelsGroup_y.append("text")
 .text("Lacks Healthcare(%)");
 
 var obesityLabel = labelsGroup_y.append("text")
-.attr("x", -chartHeight/2+margin.top)
+.attr("x", -chartHeight/2)
 .attr("y", -35)
 .attr("value", "obesity") // value to grab for event listener
 .classed("inactive", true)
@@ -290,7 +294,7 @@ var obesityLabel = labelsGroup_y.append("text")
 .text("Obesity(%)");
 
 var smokesLabel = labelsGroup_y.append("text")
-.attr("x", -chartHeight/2+margin.top)
+.attr("x", -chartHeight/2)
 .attr("y", -50)
 .attr("value", "smokes") // value to grab for event listener
 .classed("inactive", true)
