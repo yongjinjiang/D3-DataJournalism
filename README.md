@@ -1,4 +1,5 @@
-# This is the Homework of Unit 16: D3
+# This is the Homework project of Unit 16: D3
+   - A data tool is built for visualize a series of feature stories about the health risks facing particular demographics( details about the project can be found [here](#unit-16--assignment---data-journalism-and-d3). 
    - The related website is at: (https://yongjinjiang.github.io/D3-DataJournalism/).
    - A snapshot of the app:
 <img src="./Images/d3.png " width="600" height="400">
