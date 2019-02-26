@@ -6,7 +6,7 @@
    - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point.  
 
 
-# **The __original text__ of the homework assignment:**  
+# **_Theoriginal text of the homework assignment:_**  
 # Unit 16 | Assignment - Data Journalism and D3
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
