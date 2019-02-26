@@ -1,5 +1,6 @@
 # This is the Homework of Unit 16: D3
    - The related website is at: (https://yongjinjiang.github.io/D3-DataJournalism/)
+   - A snapshot of the app:
 ![picture of myapp](Images/d3.png)
    - Note both the x axis and y axis are selectable.  
 
