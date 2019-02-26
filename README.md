@@ -2,6 +2,7 @@
    - The related website is at: (https://yongjinjiang.github.io/D3-DataJournalism/).
    - A snapshot of the app:
 <img src="./Images/d3.png " width="600" height="400">
+
    - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point.  
 
 
