@@ -1,7 +1,7 @@
 # This is the Homework of Unit 16: D3
    - The related website is at: (https://yongjinjiang.github.io/D3-DataJournalism/).
    - A snapshot of the app:
-![picture of myapp](Images/d3.pngpng =250x250)
+![picture of myapp](Images/d3.png =250x250)
    - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point.  
 
 
