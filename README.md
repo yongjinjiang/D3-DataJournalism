@@ -1,13 +1,21 @@
 ## This is the homework project for unit 16(D3) of [Data Visualization and Analytics](https://bootcamp.umn.edu/data/landing%20full/)
-   - A data tool is built for visualize a series of feature stories about the health risks facing particular demographics( details about the project can be found [here](#unit-16--assignment---data-journalism-and-d3). 
+   - A data tool is built for visualize a series of feature stories about the health risks facing particular demographics( details about the project can be found [here](#the-original-text-of-the-homework-assignment). 
    - The app website is at: (https://yongjinjiang.github.io/D3-DataJournalism/).
    - A snapshot of the app:
 <img src="./Images/d3.png " width="600" height="400">
-
-   - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point.  
+ 
    - The dataset used is obtained from the [U.S. Census Bureau](https://www.census.gov/) and the [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/index.html) and was provided in the /data folder by the instructor.
    - Main tools used in this project: [D3.js](https://d3js.org/),[d3-tip](https://github.com/Caged/d3-tip), [Bootstrap](https://getbootstrap.com/),[Popper.js](https://popper.js.org/),[jQuery.js](https://jquery.com/),etc.
 
+## Usage of the app
+   - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point. 
+   - To play it locally, clone the repo, and run "python -m http.server" and open the url http://0.0.0.0:8000/ in a browser.
+   
+## Some observations
+   - Obviously, the higer income, the higher HealthCare, the lower obesity and lower smokers
+   - Roughly, the higher poverty rate, the higher smokes. An obvious exception to this rule is UT state.
+   - Roughly, the higher median age, the higher rate of Health Care and lower obesity rate.
+   - ...
 
 ## **_The original text of the homework assignment:_**  
 # Unit 16 | Assignment - Data Journalism and D3
