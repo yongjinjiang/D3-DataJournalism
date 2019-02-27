@@ -6,7 +6,7 @@
 
    - Note both the x axis and y axis are selectable and a tooltip will appear on hovering each data point.  
    - The dataset used is obtained from the [U.S. Census Bureau](https://www.census.gov/) and the [Behavioral Risk Factor Surveillance System](https://www.cdc.gov/brfss/index.html) and was provided in the /data folder by the instructor.
-   - Main tools used in this project: [D3.js](https://d3js.org/),[d3-tip](https://github.com/Caged/d3-tip) [Bootstrap](https://getbootstrap.com/),[Popper.js](https://popper.js.org/),[jQuery.js](https://jquery.com/)
+   - Main tools used in this project: [D3.js](https://d3js.org/),[d3-tip](https://github.com/Caged/d3-tip), [Bootstrap](https://getbootstrap.com/),[Popper.js](https://popper.js.org/),[jQuery.js](https://jquery.com/),etc.
 
 
 ## **_The original text of the homework assignment:_**  
