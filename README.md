@@ -1,4 +1,4 @@
-# This is the homework project for unit 16(D3) of [Data Visualization and Analytics](https://bootcamp.umn.edu/data/landing%20full/)
+## This is the homework project for unit 16(D3) of [Data Visualization and Analytics](https://bootcamp.umn.edu/data/landing%20full/)
    - A data tool is built for visualize a series of feature stories about the health risks facing particular demographics( details about the project can be found [here](#unit-16--assignment---data-journalism-and-d3). 
    - The related website is at: (https://yongjinjiang.github.io/D3-DataJournalism/).
    - A snapshot of the app:
